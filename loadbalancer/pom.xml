@@ -13,7 +13,7 @@
                     <configuration>
                         <!-- to prevent deprecation warning: -->
                         <killAfter>-1</killAfter>
-                        <mainClass>pt.ulisboa.tecnico.cnv.loadbalancer.LoadBalancerApplication
+                        <mainClass>LoadBalancerApplication
                         </mainClass>
                         <systemProperties>
                         </systemProperties>
