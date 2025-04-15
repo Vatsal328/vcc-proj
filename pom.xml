@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <artifactId>vcc-proj</artifactId>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <artifactId>commons-io</artifactId>
+            <groupId>commons-io</groupId>
+            <version>2.6</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <artifactId>commons-lang3</artifactId>
+            <groupId>org.apache.commons</groupId>
+            <version>3.8.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk</artifactId>
+            <version>1.11.537</version>
+        </dependency>
+
+
+    </dependencies>
+    <groupId>pt.ulisboa.tecnico.cnv</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>loadbalancer</module>
+        <module>web-server</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+
+    <properties>
+        <java.version>1.7</java.version>
+        <maven.compiler.plugin>3.6.0</maven.compiler.plugin>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <jvm.options>-XX:-UseSplitVerifier</jvm.options>
+    </properties>
+
+    <version>1.0</version>
+</project>
